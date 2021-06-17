@@ -7,6 +7,25 @@
     "@helloWorld": {
       "description": "A programmer greeting"
     },
+    "getStarted": "Get started",
+    "@getStarted": {
+      "description": "Get started"
+    },
+    "orsign": "or sign up with",
+    "@orsign": {
+      "description": "or sign up with"
+    },
+    "whatIndustryDoYouWorkIn": "What Industry Do You Work In",
+    "@whatIndustryDoYouWorkIn": {
+      "description": "What Industry Do You Work In"
+    },
+    "skipForNow": "Skip for Now",
+    "@skipForNow": {
+      "description": "Skip for Now"
+    },
+
+
+
     "hello": "Hello {username}",
     "@hello": {
       "description": "A welcome message",

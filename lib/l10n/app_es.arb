@@ -1,5 +1,10 @@
 {
     "language": "Español",
     "helloWorld": "Hola Mundo!",
+    "getStarted": "Comenzar",
+    "orsign": "O Comenzar con",
+    "whatIndustryDoYouWorkIn": "En qué industria trabajas",
+    "skipForNow": "Saltar por ahora",
+
     "hello": "Hola {username}"
 }
