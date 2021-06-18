@@ -7,22 +7,22 @@ import 'package:image_picker/image_picker.dart';
 
 class ProfileScreen extends StatefulWidget {
   @override
-  _ProfileScreenState createState() => _ProfileScreenState(File('file.txt'));
+  _ProfileScreenState createState() => _ProfileScreenState();
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
-  _ProfileScreenState(this._image);
-  File _image;
+  File? image;
   final picker = ImagePicker();
+  _ProfileScreenState({this.image});
 
   Future getImage() async {
     final pickedFile = await picker.getImage(source: ImageSource.gallery);
 
     setState(() {
       if (pickedFile != null) {
-        _image = File(pickedFile.path);
+        image = File(pickedFile.path);
       } else {
-        print('No image selected.');
+        print('No image selected state.');
       }
     });
   }
@@ -38,9 +38,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
               height: 30,
             ),
             Center(
-                child: _image == null
-                    ? Text('No image selected.')
-                    : Image.file(_image)),
+                child: image == null
+                    ? Text('No image selected image.')
+                    : Image.file(image!)),
             FloatingActionButton(
               onPressed: getImage,
               tooltip: 'Pick Image',
