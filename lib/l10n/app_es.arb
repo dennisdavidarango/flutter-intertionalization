@@ -2,9 +2,12 @@
     "language": "Español",
     "helloWorld": "Hola Mundo!",
     "getStarted": "Comenzar",
-    "orsign": "O Comenzar con",
+    "or_sign_up": "O Comenzar con",
     "whatIndustryDoYouWorkIn": "En qué industria trabajas",
     "skipForNow": "Saltar por ahora",
+    "next": "Siguiente",
+    "settings": "Configuracion",
+    "home": "Casa",
 
     "hello": "Hola {username}"
 }

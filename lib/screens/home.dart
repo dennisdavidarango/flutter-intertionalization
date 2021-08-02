@@ -1,7 +1,5 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
+
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Home extends StatelessWidget {
@@ -31,7 +29,7 @@ class Home extends StatelessWidget {
           ),
           Container(
             height: 200,
-            color: Color(0xFF040412),
+            //color: Color(0xFF040412),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -50,7 +48,7 @@ class Home extends StatelessWidget {
             children: [
               Container(
                 height: 600,
-                color: Color(0xFF040412),
+                //color: Color(0xFF040412),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(

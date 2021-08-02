@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:test_internationalization/screens/Corousel-demo.dart';
 import 'package:test_internationalization/screens/discover.dart';
 import 'package:test_internationalization/screens/home.dart';
+import 'package:test_internationalization/screens/profile-screen-crop.dart';
 import 'package:test_internationalization/screens/profile-screen.dart';
+import 'package:test_internationalization/screens/settings-screen.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class StartScreen extends StatefulWidget {
   @override
@@ -28,10 +31,10 @@ class _StartScreenState extends State<StartScreen> {
       selectedItemColor: Colors.white,
       unselectedItemColor: Colors.white54,
       type: BottomNavigationBarType.fixed,
-      items: const <BottomNavigationBarItem>[
+      items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(
           icon: Icon(Icons.home_filled),
-          label: 'Home',
+          label: AppLocalizations.of(context)!.home,
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.search),
@@ -64,11 +67,8 @@ class _StartScreenState extends State<StartScreen> {
   final _pages = [
     Center(child: Home()),
     Center(child: Discover()),
-    Center(child: CarouselDemo()),
-    Icon(
-      Icons.chat,
-      size: 150,
-    ),
+    Center(child: ProfileScreenCrop()),
+    Center(child: SettingsScreen()),
     Center(child: ProfileScreen()),
   ];
 }

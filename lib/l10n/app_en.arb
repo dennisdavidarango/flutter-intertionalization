@@ -11,7 +11,7 @@
     "@getStarted": {
       "description": "Get started"
     },
-    "orsign": "or sign up with",
+    "or_sign_up": "or sign up with",
     "@orsign": {
       "description": "or sign up with"
     },
@@ -23,6 +23,19 @@
     "@skipForNow": {
       "description": "Skip for Now"
     },
+    "next": "Next",
+    "@next": {
+      "description": "Next"
+    },
+    "settings": "Settings",
+    "@settings": {
+      "description": "Settings"
+    },
+    "home": "Home",
+    "@home": {
+      "description": "Home"
+    },
+
 
 
 
